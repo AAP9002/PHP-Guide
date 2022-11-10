@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./site.css" />
+    <script src="./site.js"></script>
+    <title>Read to me</title>
+</head>
+<body>
+    <div id = "wrapper">
+        <div id = "formDiv">
+            <form action="readAloud.php" method="post" enctype="multipart/form-data" onsubmit="return validateInput();">
+                <p>Enter story here:</p>
+                <textarea id = "storyText" name="storyText"></textarea>
+                <p>OR</p>
+                <input type="file" id="storyFile" name="storyFile"/>
+                <input type="submit" value="Read Aloud">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

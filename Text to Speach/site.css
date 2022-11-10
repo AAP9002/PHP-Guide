@@ -1,0 +1,25 @@
+#wrapper{
+    border: thin solid black;
+    width: 80%;
+    margin: auto;
+    background-color: darkblue;
+    
+}
+
+#formDiv{
+    border: thin solid black;
+    background-color: lightblue;
+    height: 10em;
+    margin: 3em;
+    padding: 5em;
+    padding-top: 1.5em;
+}
+
+textarea{
+    width: 100%;
+    height: 5em;
+}
+
+input[type="submit"] {
+    float: right;
+}
