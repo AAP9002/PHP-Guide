@@ -1,5 +1,5 @@
 <?php
-    if (!empty($_FILES['storyFile']))
+    if (!empty($_FILES['storyFile']['tmp_name']))
         $text = file_get_contents($_FILES['storyFile']['tmp_name']);
     elseif (!empty($_POST['storyText']))
         $text = $_POST['storyText'];
@@ -7,7 +7,7 @@
         exit("bad data");
     
 
-    //echo($text);
+    echo($text);
 
     //break into parts for API max string length
 
